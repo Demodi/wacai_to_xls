@@ -135,7 +135,7 @@ for _, row in df.iterrows():
             print(typ)
     except Exception as e:
         print('exception', e)
-        print(row)
+        # print(row)
         continue
 
 
@@ -158,4 +158,5 @@ df_borrow.to_excel(writer, sheet_name='借入借出', index=False)
 df_refund.to_excel(writer, sheet_name='收款还款', index=False)
 writer.close()
 
-print(accounts)
+print("导出完成")
+# print(accounts)
