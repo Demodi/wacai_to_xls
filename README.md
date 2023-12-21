@@ -7,3 +7,11 @@
 # xls
 使用挖财官方的xls模板，见`wacai.xls`，生成的xls可以在挖财官网网页上导入
 
+0. 生成镜像
+docker build -t wacai .
+
+1. 执行命令
+docker run -it --rm --name wacai -v "$PWD":/usr/src/app wacai bash
+
+2.进行到容器后执行命令
+python wacai.py wacai.so

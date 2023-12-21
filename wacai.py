@@ -150,7 +150,7 @@ df_borrow = pd.DataFrame(
 df_refund = pd.DataFrame(
     dd_refund, columns=['借贷类型', '借贷时间', '借贷账户', '账户', '金额', '利息', '备注', '账本'])
 
-writer = pd.ExcelWriter('out.xlsx')
+writer = pd.ExcelWriter('./out.xlsx')
 df_outgo.to_excel(writer, sheet_name='支出', index=False)
 df_income.to_excel(writer, sheet_name='收入', index=False)
 df_transfer.to_excel(writer, sheet_name='转账', index=False)
